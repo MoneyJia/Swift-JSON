@@ -11,11 +11,36 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    /*
+     2018.8.20
+     
+     swift tableview collectionview
+     mac 上传代码到github
+     
+     2018.8.21
+     swift 网络请求
+     swift Kingfisher (OC中的SDWebImage)
+     OC 一个model中创建多个model
+     Json转模型1--SwiftyJson   (https://www.jianshu.com/p/46f55c2d219c)
+     Json转模型2--objectMapple (https://www.jianshu.com/p/2f08971c6a25)
+     Json转模型3--HandyJSON (https://www.jianshu.com/p/bee454b2c6d7)  (https://www.cnblogs.com/yajunLi/p/7121950.html)
+     
+     swift-数组   https://blog.csdn.net/bddzzw/article/details/78276026
+     swift-字符串 https://www.jianshu.com/p/54dc47a81df5
+
+     */
+    
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = UIColor.white
+        window?.rootViewController = UINavigationController(rootViewController: ViewController())
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

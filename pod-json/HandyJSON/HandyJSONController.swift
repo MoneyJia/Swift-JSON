@@ -16,15 +16,7 @@ class HandyJSONController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        let json = ["name":"hehe",
-                    "title":"test",
-                    "time":"hhh"]
-        
-        let jsonData = JSON(json)
-        
-        let m = model.init(jsonData: jsonData)
-        
-        print(m.name as Any)
+        self.title = "HandyJSON";
         
         //Json转模型3--HandyJSON
         let jsonString = "{\"name\":\"cat\",\"id\":\"12345\",\"num\":180}"
@@ -78,8 +70,6 @@ class HandyJSONController: UIViewController {
             let data = responseDic!["data"]
             print(data as Any)
         }
-        
-        //7. json -> dic
         
     }
 
